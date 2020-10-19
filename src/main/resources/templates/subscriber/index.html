@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Subscriber List</title>
+</head>
+<body>
+    <div class="jumbotron"></div>
+    <h1 class="display-4">Welcome to our AWESOME SITE! </h1>
+    <p class="lead">Subscribe to our List. Sign up below!</p>
+    <hr class="my-4">
+    <p>Please use the form below to sign up as a subscriber:</p>
+    <br><br>
+    <p class="lead">
+         <form action="#" th:action="@{/}" th:object="${subscriber}" method="post">
+            <table>
+                <div class="form-group">
+                    <label for="exampleFirstName">First Name</label>
+                    <input type="text" th:field ="*{firstName}" class="form-control" id="exampleFirstName" aria-describedby="firstName" placeholder="Enter First Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleLastName">Last Name</label>
+                    <input type="text" th:field="*{lastName}" class="form-control" id="exampleLastName" aria-describedby="lastName" placeholder="Enter Last Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleUsername">Username</label>
+                    <input type="text" th:field="*{userName}" class="form-control" id="exampleUsername" aria-describedby="Username" placeholder="Enter Username">
+                  </div>
+                  <br><br>
+                 </div>
+                <button type="submit" class="btn btn-primary">Submit Your Name</button>
+                </table>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
+</body>
+</html>

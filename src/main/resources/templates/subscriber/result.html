@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Subscriber Sign-Up</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div class="jumbotron"></div>
+	<h1 class="display-4">Subscriber Sign-up Form</h1>
+	<p class="lead">Thank you for signing up!</p>
+	<hr class="my-4">
+	
+	<h2>Subscriber:</h2>
+	<br><br>
+
+	<p th:text="${firstName}" ></p>
+	<p th:text="${lastName}" ></p>
+	<p th:text="${userName}" ></p>
+</body>
+</html>
